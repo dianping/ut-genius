@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+	    <!-- add to pop menu -->
+	    <extension point="org.eclipse.ui.popupMenus">
+	        <!-- add to editor context menu -->
+	         <objectContribution
+	            id="Plugin.EditorContribution"
+	            objectClass="org.eclipse.jdt.core.ICompilationUnit"
+	            nameFilter="*.*">
+	            <!-- add a menu item call "Plugin" -->
+	            <menu
+	                label="UT Genius"
+	                path="additions"
+	                id="Plugin.EditorMenuXX">
+	                <separator
+	                    name="group">
+	                </separator>
+	            </menu>
+	            <!-- add a sub menu item called "Do Stuff" -->
+	            <!-- that calls the class plugin.actions.DoStuff -->
+	            <action
+	                label="Generate Scaffolding"
+	                class="com.dianping.utgen.action.ScaffoldingGenerator"
+	                menubarPath="Plugin.EditorMenuXX/group"
+	                enablesFor="1"
+	                id="Plugin.GeneratorActionXX">
+	            </action>
+	        </objectContribution>
+	        <objectContribution
+	            id="Plugin.EditorContribution"
+	            objectClass="org.eclipse.ui.IEditorInput"
+	            nameFilter="*.*">
+	            <!-- add a menu item call "Plugin" -->
+	            <menu
+	                label="UT Genius"
+	                path="additions"
+	                id="Plugin.EditorMenu">
+	                <separator
+	                    name="group">
+	                </separator>
+	            </menu>
+	            <!-- add a sub menu item called "Do Stuff" -->
+	            <!-- that calls the class plugin.actions.DoStuff -->
+	            <action
+	                label="Generate Scaffolding"
+	                class="com.dianping.utgen.action.GeneratorAction"
+	                menubarPath="Plugin.EditorMenu/group"
+	                enablesFor="1"
+	                id="Plugin.GeneratorAction">
+	            </action>
+	        </objectContribution>
+         <objectContribution
+               id="com.dianping.plugin.ut.gen.contribution1"
+               objectClass="org.eclipse.core.resources.IFile">
+            <menu
+                  id="com.dianping.utgen.menu1"
+                  label="UT Genius"
+                  path="additions">
+               <separator
+                     name="group1">
+               </separator>
+            </menu>
+            <action
+                  class="com.dianping.plugin.ut.action.AddDepedency"
+                  enablesFor="1"
+                  id="com.dianping.plugin.ut.gen.newAction"
+                  label="add dependency"
+                  menubarPath="com.dianping.utgen.menu1/group1">
+            </action>
+         </objectContribution>
+	    </extension>
+</plugin>

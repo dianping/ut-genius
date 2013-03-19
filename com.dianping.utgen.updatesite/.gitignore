@@ -1,0 +1,7 @@
+#ignore
+bin
+.settings
+target
+.classpath
+.project
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<description name="UT Genius Plugins for Eclipse Local Update Site">
+      UT Genius Plugins for Eclipse Update Site for local deployment purposes
+   </description>
+   <feature url="features/com.dianping.utgen.feature_1.0.0.qualifier.jar" id="com.dianping.utgen.feature" version="1.0.0.qualifier">
+      <category name="utgen"/>
+   </feature>
+   <category-def name="utgen" label="UT Genius"/> 
+
+</site>

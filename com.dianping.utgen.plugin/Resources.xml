@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ut-gen>
+
+	<dependency>
+		<groupId>commons-lang</groupId>
+		<artifactId>commons-lang</artifactId>
+		<version>2.6</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.codehaus.jackson</groupId>
+		<artifactId>jackson-mapper-asl</artifactId>
+		<version>1.9.12.1</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>com.dianping.test</groupId>
+		<artifactId>ut-gen</artifactId>
+		<version>0.9.4</version>
+		<scope>test</scope>
+	</dependency>
+
+</ut-gen>

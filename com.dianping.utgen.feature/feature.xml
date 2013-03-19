@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.dianping.utgen.feature"
+      label="UT Genius Feature"
+      version="1.0.0.qualifier"
+      provider-name="dianping.com">
+
+   <description url="http://www.dianping.com/description">
+      UT Genius for generating junit test code powered with mockito
+   </description>
+
+   <copyright url="http://www.dianping.com/copyright">
+      all rights reserved
+   </copyright>
+
+   <license url="http://www.dianping.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="com.dianping.utgen.plugin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
